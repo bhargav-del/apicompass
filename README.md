@@ -26,3 +26,7 @@ Your JSON is processed in the browser. The app does not send payload contents to
 
 ## License
 MIT © 2026 Yuin
+
+## Desktop release
+
+The repository includes a portable Windows desktop build. Every push to `main` runs the Windows packaging workflow and publishes a `.exe` to the repository's **Releases** section. The desktop shell loads the same app locally, so it works without an API key or server.

@@ -1,0 +1,32 @@
+{
+  "name": "apicompass",
+  "version": "1.0.0",
+  "description": "A private JSON formatter and API payload toolbox.",
+  "private": true,
+  "main": "desktop/main.cjs",
+  "scripts": {
+    "dist": "electron-builder --win portable"
+  },
+  "devDependencies": {
+    "electron": "^36.3.2",
+    "electron-builder": "^26.0.12"
+  },
+  "build": {
+    "appId": "dev.yuin.apicompass",
+    "productName": "API Compass",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "index.html",
+      "styles.css",
+      "app.js",
+      "desktop/**/*",
+      "package.json"
+    ],
+    "win": {
+      "target": "portable",
+      "artifactName": "API Compass-Portable-${version}.exe"
+    }
+  }
+}
