@@ -1,0 +1,8 @@
+{
+  "appId": "dev.yuin.apicompass",
+  "appName": "API Compass",
+  "webDir": "mobile-web",
+  "server": {
+    "androidScheme": "https"
+  }
+}
