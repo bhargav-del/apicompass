@@ -1,7 +1,7 @@
 {
   "name": "apicompass",
   "version": "1.0.0",
-  "description": "A private JSON formatter and API payload toolbox.",
+  "description": "Private in-browser JSON formatter, validator, and payload inspector.",
   "private": true,
   "main": "desktop/main.cjs",
   "scripts": {
