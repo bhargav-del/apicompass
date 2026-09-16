@@ -1,7 +1,7 @@
 {
   "name": "apicompass",
-  "version": "1.0.0",
-  "description": "Private in-browser JSON formatter, validator, and payload inspector.",
+  "version": "1.0.5",
+  "description": "Self-contained Windows desktop JSON formatter, validator, and payload inspector.",
   "private": true,
   "main": "desktop/main.cjs",
   "scripts": {
@@ -29,8 +29,31 @@
       "package.json"
     ],
     "win": {
-      "target": "portable",
+      "target": [
+        {
+          "target": "portable",
+          "arch": [
+            "x64"
+          ]
+        },
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ]
+    },
+    "asar": true,
+    "portable": {
       "artifactName": "API Compass-Portable-${version}.exe"
+    },
+    "nsis": {
+      "artifactName": "API Compass-Setup-${version}.exe",
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true
     }
   }
 }
