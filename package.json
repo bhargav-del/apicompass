@@ -1,11 +1,11 @@
 {
   "name": "apicompass",
-  "version": "1.0.5",
-  "description": "Self-contained Windows desktop JSON formatter, validator, and payload inspector.",
+  "version": "2.0.0",
+  "description": "Self-contained Windows desktop JSON studio with path queries, history, and offline support.",
   "private": true,
   "main": "desktop/main.cjs",
   "scripts": {
-    "dist": "electron-builder --win",
+    "dist": "electron-builder --win portable",
     "check": "node --check app.js"
   },
   "devDependencies": {
@@ -26,15 +26,12 @@
       "styles.css",
       "app.js",
       "desktop/**/*",
-      "package.json"
+      "package.json",
+      "manifest.webmanifest",
+      "sw.js"
     ],
     "win": {
-      "target": [
-        "portable"
-      ]
-    },
-    "asar": true,
-    "portable": {
+      "target": "portable",
       "artifactName": "API Compass-Portable-${version}.exe"
     }
   }

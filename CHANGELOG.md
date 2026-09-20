@@ -1,11 +1,11 @@
 # Changelog
 
-## v1.0.5 — 2026-09-15
+## v2.0.0 — 2026-09-15
 
-- Published a fully self-contained Windows desktop app.
-- Added a portable `.exe` with the full runtime and product UI bundled inside.
-- Bundled the browser UI inside the Electron application archive so users do not need separate HTML, CSS, or JavaScript files.
-- Kept the Windows release install-free: download and run the portable app.
+- Query nested JSON values with dot and bracket paths
+- Restore recent payloads from local history
+- Offline-capable PWA shell with private, local-only processing
+- Refined responsive layout, accessibility states, and release metadata.
 
 ## v1.0.0 — 2026-09-15
 

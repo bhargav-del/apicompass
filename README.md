@@ -6,7 +6,13 @@
 [![Latest release](https://img.shields.io/github/v/release/bhargav-del/apicompass?display_name=tag&sort=semver)](https://github.com/bhargav-del/apicompass/releases)
 [![License](https://img.shields.io/github/license/bhargav-del/apicompass)](https://github.com/bhargav-del/apicompass/blob/main/LICENSE)
 
-A fast, private JSON formatter and API payload toolbox. Built as a local-first, dependency-light product experience with a self-contained Windows desktop app, a portable Windows build, and a scheduled Android APK release.
+Self-contained Windows desktop JSON studio with path queries, history, and offline support. Built as a local-first, dependency-light product experience with a browser build, a portable Windows desktop build, and a scheduled Android APK release.
+
+## What's new in v2.0.0
+
+- Query nested JSON values with dot and bracket paths
+- Restore recent payloads from local history
+- Offline-capable PWA shell with private, local-only processing
 
 ## What it demonstrates
 
@@ -47,11 +53,9 @@ node --check app.js
 
 ## Releases
 
-The Windows release is fully self-contained: download the portable `.exe` and run it directly. The app bundles its HTML, CSS, JavaScript, and runtime inside the executable package, so users do not need separate web files.
-
-- [Windows downloads](https://github.com/bhargav-del/apicompass/releases/tag/v1.0.5)
-- Portable: `API Compass-Portable-1.0.5.exe`
-- Android 7+ (API 24+) `v1.0.0` APK remains scheduled for **September 16, 2026 at 08:00 IST**.
+- [Browser source and releases](https://github.com/bhargav-del/apicompass/releases)
+- The Windows portable `.exe` is built by GitHub Actions: [`API Compass-Portable-2.0.0.exe`](https://github.com/bhargav-del/apicompass/releases/download/v2.0.0/API.Compass-Portable-2.0.0.exe).
+- The Android 7+ (API 24+) `v1.0.0` APK is scheduled for **September 16, 2026 at 08:00 IST**.
 
 ## Privacy and security
 

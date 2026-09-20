@@ -1,0 +1,9 @@
+{
+  "name": "API Compass",
+  "short_name": "API Compass",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f7f8f6",
+  "theme_color": "#8067cd",
+  "description": "A private in-browser JSON formatter and payload inspector."
+}
